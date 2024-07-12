@@ -336,7 +336,7 @@ font-size: 1.6em;
     height: 675px;
   }
   .container .jumbotronAbout {
-    background: url('../images/about/truck1200.png') no-repeat;
+    background: url('../images/about/truck1200.jpg') no-repeat;
     height: 675px;
   }
 }
@@ -369,7 +369,7 @@ font-size: 1.6em;
   /* About us Page */
 
   .container .jumbotronAbout {
-    background: url('../images/about/truck992.png') no-repeat;
+    background: url('../images/about/truck992.jpg') no-repeat;
     height: 558px;
   }
 
