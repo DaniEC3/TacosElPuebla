@@ -22,15 +22,11 @@ You can visit the live website [here](https://tacoselpuebla.com).
 - **Contact Information & Hours:** Displays restaurant hours and location details.
 
 ## Technologies
-- **Frontend:**
   - HTML5
   - CSS3
-  - JavaScript (Vanilla)
-- **Backend:**
-  - Node.js
-  - Express.js
-- **Database:**
-  - (Specify if you're using any database, otherwise remove this section)
+  - JavaScript
+  - BootStrap
+
 
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue if you have suggestions for improvements or encounter any bugs.
