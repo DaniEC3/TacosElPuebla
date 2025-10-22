@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tacos el Puebla</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
   </head>
 <body>
@@ -19,10 +19,10 @@
   <header>
     <nav id="header-nav" class="navbar navbar-default">
 
-      <div class="container-fluid"> <!-- Se pone 'container dentro de 'header-nav' para que el color del header se extienda, dentro del 'container' solo estara nuestro contenido -->
+      <div class="container"> <!-- Se pone 'container dentro de 'header-nav' para que el color del header se extienda, dentro del 'container' solo estara nuestro contenido -->
 
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="../index.html" class="pull-left visible-md visible-lg">
 
             <!-- visible son los rangos para los que el logo sera visible' -->
             <!-- pull-left means float left in bootstrap -->
@@ -31,7 +31,7 @@
           </a>
 
           <div class="navbar-brand">
-            <a href="index.html"><h1>Tacos el Puebla</h1></a>
+            <a href="../index.html"><h1>Tacos el Puebla</h1></a>
             <p>
               <span>Handmade Tortillas</span>
             </p>  
@@ -52,7 +52,7 @@
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
-              <a href="index.html">
+              <a href="../index.html">
                 <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
             </li>
             <li class = active>
@@ -60,7 +60,7 @@
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
-              <a href="about-category.html">
+              <a href="#">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li id="phone" class="hidden-xs">
@@ -87,19 +87,52 @@
 
   <!-- PAGINA PRINCIPAL  -->
 
-  <div id="main-content" class="container-fluid">
+  <div id="main-content" class="container">
+    <h2 id="menu-categories-tacos" class="text-center">Lunch Menu</h2>
+    <div class="text-center">Lunch is not served until after 1pm.</div>
+
     <section class="row">
       <div class="menu-item-tile col-md-6">
-        <div class="select-box">
-          <div class = "menu-item-photo">
-            <img class="img-responsive" width="1200" height="1000" src="images/menu/empanadas/empanadas.jpeg" alt="Item">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>D01</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/tacos/tacos.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
           </div>
-          <div class = "menu-item-text text-visibility"> <p>Empanadas</p>
-            <hr> Stuffed fried tacos with ground beef, chicken or cheese topped with lettuce, sour cream and grated cheese.<div class="cursive">Tacos fritos rellenos de carne molida, pollo o queso cubiertos con lechuga, crema agria y queso rallado.</div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Tacos</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. </p>
           </div>
         </div>
+        <hr class="visible-xs">
       </div>
+
+      <section class="row">
+      <div class="menu-item-tile col-md-6">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div>D01</div>
+              <img class="img-responsive" width="250" height="150" src="images/menu/tacos/tacos.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Tacos</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. </p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+
+      
+      <!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block"></div>
+
     </section>
+
   </div><!-- End of #main-content -->
 
 

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tacos el Puebla</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
   </head>
 <body>
@@ -22,7 +22,7 @@
       <div class="container-fluid"> <!-- Se pone 'container dentro de 'header-nav' para que el color del header se extienda, dentro del 'container' solo estara nuestro contenido -->
 
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="../index.html" class="pull-left visible-md visible-lg">
 
             <!-- visible son los rangos para los que el logo sera visible' -->
             <!-- pull-left means float left in bootstrap -->
@@ -31,7 +31,7 @@
           </a>
 
           <div class="navbar-brand">
-            <a href="index.html"><h1>Tacos el Puebla</h1></a>
+            <a href="../index.html"><h1>Tacos el Puebla</h1></a>
             <p>
               <span>Handmade Tortillas</span>
             </p>  
@@ -51,16 +51,16 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li  class="active">
-              <a href="index.html">
+            <li>
+              <a href="../index.html">
                 <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
             </li>
             <li>
-                <a href="categories/menu-categories.html">
+              <a href="menu-categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
-            <li>
-                <a href="categories/about-category.html">
+            <li  class="active">
+              <a href="about-category.html">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li id="phone" class="hidden-xs">
@@ -90,32 +90,44 @@
 
 
   <div id='main-content' class="container"> <!-- shortcut: div.container -->
-   <div class='jumbotron'> 
-     <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
-   </div>
-
-
-
-   <!-- BOTONES -->
-
-
-
+    <div class='jumbotronAbout'>  
+  <img src="../images/about/truck768.png" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+    <h3 class="text-center about-title">ABOUT US</h3>
     <div id='home-tiles' class="row"> <!-- Shortcut: div.row -->
-      <div class="col-md-4 col-sm-6 col-xs-12">
-  <a href="categories/menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      <div class="col-md-6 col-xs-12">
+        <div class="about-us-tile">
+          <img class="img-responsive" src="../images/about/handmade.png" alt="Lunch">
+        </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-    <a href="categories/about-category.html"><div id="about-tile"><span>about us</span></div></a>
+      <div class="col-md-6 col-xs-12 ">
+        <div class="about-us-tile">
+          <div class="desc-sty">  
+            Since 2014, we have served our customers a delicious variety of handmade Mexican food and drinks inspired by our roots in Puebla, Mexico.  Family-owned and operated, we specialize in fresh handmade tortillas and a welcoming atmosphere!  </div>
+        </div>
+      </div>   
+      <div class="col-md-6 col-xs-12">
+        <div class="about-us-tile">
+          <div class="desc-sty">
+            Tacos El Puebla began in our signature yellow food truck, serving Columbia and the surrounding areas for 6 years until we moved our business to a brick-and-mortar building in 2021. Throughout all our years in business, we have always proudly served our customers with a smile.</div>
+        </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://maps.app.goo.gl/n9kQcdGZRQJjszbFA">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.0405389576886!2d-80.97688602274607!3d33.991492473180145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b01b0573aaab%3A0xd344b6feaad38a6!2sTacos%20El%20Puebla%20Mexican%20Cravings!5e0!3m2!1ses!2sus!4v1715206189122!5m2!1ses!2sus" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen> </iframe>
-            <span>map</span>
-          </div>
-        </a>
-      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="about-us-tile">
+          <img class="img-responsive" src="../images/about/grillup.jpg" alt="Lunch">
+        </div>
+      </div>   
     </div><!-- End of #home-tiles -->
+    <div  class="web-info">
+        <ul>
+            <li>Web page design and created by: Daniel Estrada Calderón</li>
+            <li>Photos taken by: Daniel Estrada Calderón</li>
+            <li>Contact Information: <a href="mailto: dadacal@hotmail.com">
+              dadacal@hotmail.com
+            </a></li>
+          
+        </ul>
+    </div>
   </div><!-- End of #main-content -->
 
 
@@ -156,8 +168,8 @@
 
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
